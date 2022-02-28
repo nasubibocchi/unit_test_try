@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:unit_test_try/sample_page/sample_page_view_model.dart';
+import 'package:unit_test_try/presentations/sample_page/sample_page_view_model.dart';
 
 class SamplePage extends HookConsumerWidget {
   const SamplePage({Key? key, required this.title}) : super(key: key);

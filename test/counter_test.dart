@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:unit_test_try/sample_page/sample_page_view_model.dart';
+import 'package:unit_test_try/presentations/sample_page/sample_page_view_model.dart';
 
 void main() {
   late SamplePageViewModel counter;
