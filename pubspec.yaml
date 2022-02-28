@@ -37,7 +37,8 @@ dependencies:
   hooks_riverpod: ^1.0.3
   freezed: ^1.1.1
   flutter_hooks: ^0.18.2+1
-  json_annotation: ^4.4.0
+  json_serializable: ^6.1.4
+  mockito: ^5.1.0
 
 dev_dependencies:
   flutter_test:
