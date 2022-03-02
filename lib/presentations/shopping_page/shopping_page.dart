@@ -12,18 +12,20 @@ class ShoppingPage extends HookConsumerWidget {
     return Scaffold(
       appBar: AppBar(),
       body: state.when((shoppingList) {
-        return ListView.builder(itemBuilder: (context, int index) {
-          return Card(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text('${shoppingList[index].quantity}'),
-                const SizedBox(width: 30),
-                Text(shoppingList[index].product),
-              ],
-            ),
-          );
-        });
+        return ListView.builder(
+            itemCount: shoppingList.length,
+            itemBuilder: (context, int index) {
+              return Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text('${shoppingList[index].quantity}'),
+                    const SizedBox(width: 30),
+                    Text(shoppingList[index].product),
+                  ],
+                ),
+              );
+            });
       }, loading: () {
         return const Center(
           child: CircularProgressIndicator(),
