@@ -1,5 +1,5 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:unit_test_try/application/shopping_repository.dart';
+import 'package:unit_test_try/domain/shopping.dart';
 import 'package:unit_test_try/remote/shopping_data_source.dart';
 
 class ShoppingRepositoryImpl implements ShoppingRepository {
@@ -9,7 +9,7 @@ class ShoppingRepositoryImpl implements ShoppingRepository {
   final ShoppingDataSource _dataSource;
 
   @override
-  Future<QuerySnapshot<Map<String, dynamic>>> fetchShoppingList() async {
+  Future<List<Shopping>> fetchShoppingList() async {
     return await _dataSource.fetchShoppingList();
   }
 }
